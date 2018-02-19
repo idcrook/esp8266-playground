@@ -68,7 +68,7 @@ I used Fritzing to diagram up this project before wiring it up... Read the [Part
 
 ---
 
-Breadboard wiring diagram.
+#### Breadboard wiring diagram.
 
 While drawn on a full-length solderless breadboard, it easily fits on a half-length breadboard.
 
@@ -84,13 +84,13 @@ While drawn on a full-length solderless breadboard, it easily fits on a half-len
 
 ---
 
-Schematic diagram
+#### Schematic diagram
 
 ![Breadboard Diagram](Programming_ESP-01_rev1_schem.png)
 
 ---
 
-Pinout on ESP-01 ESP8266 board
+#### Pinout on ESP-01 ESP8266 board
 
 ![ESP-01 pins](esp-01-pins.jpg)
 

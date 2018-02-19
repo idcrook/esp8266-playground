@@ -1,6 +1,6 @@
 # Installing Arduino + esp8266 toolchain
 
-from [https://github.com/esp8266/Arduino](https://github.com/esp8266/Arduino)
+Via <https://github.com/esp8266/Arduino>
 
 ### Installing with Boards Manager
 
