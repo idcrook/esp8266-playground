@@ -59,7 +59,7 @@ scan done
 ```
 
 
-![WiFi scanning...](esp01-wifi_scanning.gif "WiFiScanning sketch serial monitor output")
+![WiFi scanning...](esp01-wifi-scanning.gif "WiFiScanning sketch serial monitor output")
 
 
 ## Circuits
