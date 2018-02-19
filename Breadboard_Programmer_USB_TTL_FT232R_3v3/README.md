@@ -107,6 +107,7 @@ VCC is 3.3V only on ALL pins!!
     - **IMPORTANT**: Vcc on this cable is 5V -- DO NOT USE TO POWER ESP-01 module directly! ESP8266 is ONLY 3.3V safe. Leave VCC of this cable unconnected!
 
   - UA85M33C LDO 3.3V regulator
+    - For a portable application using a 5V USB power bank, a 5.0V -> 3.3V regulator would be better, something like AMS1117
 
   - 9V/650mA wall wart power supply
     - Will be connected to an LDO voltage regulator to get a 3.3V supply for the ESP module
@@ -147,4 +148,9 @@ VCC is 3.3V only on ALL pins!!
 
 may have consulted these:
 
- - [https://www.diyhobi.com/flash-program-esp-01-using-usb-serial-adapter/](https://www.diyhobi.com/flash-program-esp-01-using-usb-serial-adapter/)
+ - <https://www.diyhobi.com/flash-program-esp-01-using-usb-serial-adapter/>
+ - <https://www.allaboutcircuits.com/projects/flashing-the-ESP-01-firmware-to-SDK-v2.0.0-is-easier-now/>
+ - <http://homecircuits.eu/blog/programming-esp01-esp8266/>
+ - <https://learn.adafruit.com/esp8266-temperature-slash-humidity-webserver?view=all>
+ - <https://www.iot-experiments.com/flashing-esp8266-esp01/>
+ - <https://www.hackster.io/harshmangukiya/program-esp8266-esp-01-with-arduino-ide-efb05f>
