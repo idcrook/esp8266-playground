@@ -64,7 +64,9 @@ scan done
 
 ## Circuits
 
-I used Fritzing to diagram up this project before wiring it up... Read the [Parts](#parts) section below for additional details
+I used Fritzing to diagram up this project before wiring it up... Read the [Parts](#parts) section below for additional details.
+
+Fritzing source: Download [[Programming_ESP-01_rev1.fzz](https://github.com/idcrook/esp8266-playground/raw/master/Breadboard_Programmer_USB_TTL_FT232R_3v3/Programming_ESP-01_rev1.fzz)]
 
 ---
 
@@ -77,8 +79,6 @@ While drawn on a full-length solderless breadboard, it easily fits on a half-len
 **DO NOT use VCC from USB cable!**
  1. It is 5V. Only 3.3V can be supplied to ESP module!
  2. It likely will not have sufficient power to drive your setup.
-
-
 
 ![Breadboard Diagram](Programming_ESP-01_rev1_bb.png)
 
@@ -99,7 +99,6 @@ VCC is 3.3V only on ALL pins!!
 ---
 
 ## Parts
-
 
 ### Modules / ICs
 
@@ -140,8 +139,6 @@ VCC is 3.3V only on ALL pins!!
  - Magnifying glass to read part names and text
  - Digital multimeter to measure supplies and check continuity
  - *OPTIONAL*: Screwdriver with small driver to screw down wires in barrel jack adapter
-
-
 
 
 ## Resources
