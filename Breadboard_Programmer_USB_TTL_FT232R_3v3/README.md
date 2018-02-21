@@ -5,9 +5,23 @@
 Use an FTDI FT-232R-3V3 USB Serial cable ([Adafruit #70](https://www.adafruit.com/product/70)) to program a common, simple ESP8266 module known as ESP-01; had purchased the USB to Serial cable  while ago from Adafruit when they still were using the genuine FTDI chip/cable.
 
 
+
 ## How to use
 
 Using a USB serial cable and the easy-to-use ESP8266 Arduino project with Arduino IDE, you can upload programs written in Arduino environment directly to your ESP8266 module.
+
+Before going further, here are updated design revisions:
+
+  - **[Revision 2](Circuits_Rev2.md)** - 19-Feb-2018
+    - Reverted to an earlier version of design, with small mod removing pull-up resistor from "FLASH" button circuit. This has allowed for:
+        1. More reliable firmware upload sequence
+        2. Not requiring continued holding down of "FLASH" button through  upload process.
+    - Use "[4 pin dual-female jumper wire - 300mm (5 PCs pack)](https://www.seeedstudio.com/4-pin-dual-female-jumper-wire-300mm-(5-PCs-pack\)-p-97.html)" for easier, quicker assembly of wires to ESP-01 module
+        - These are not shown on schematic/breadboard images
+
+**RECOMMENDED**: **Revision 2**.  Recommended to use in place of circuits described below
+
+
 
 ### Hooking up the software and hardware
 
@@ -39,14 +53,14 @@ To verify firmware programming setup and WiFi functionality, there is an  exampl
  1. Open the serial monitor in Arduino.app (click [Serial Monitor] button).
  1. Upload firmware to device:
     1. Plug in/switch on power supply to breadboard. USB cable connected already
-	2. Hold down RESET button
-	3. While continuing to hold down RESET button, hold down FLASH button
-	4. Release RESET button
-	5. Release FLASH button
-	6. Click the [Upload] button in IDE
-	   1. Arduino will compile again
-	   2. Should upload firmware
-	   3. Should start WiFi scanning in Serial Monitor window!
+    2. Hold down RESET button
+    3. While continuing to hold down RESET button, hold down FLASH button
+    4. Release RESET button
+    5. Release FLASH button
+    6. Click the [Upload] button in IDE
+       1. Arduino will compile again
+       2. Should upload firmware
+       3. Should start WiFi scanning in Serial Monitor window!
 
 ```
 scan start
@@ -106,12 +120,12 @@ VCC is 3.3V only on ALL pins!!
     - **IMPORTANT**: Vcc on this cable is 5V -- DO NOT USE TO POWER ESP-01 module directly! ESP8266 is ONLY 3.3V safe. Leave VCC of this cable unconnected!
 
   - UA85M33C LDO 3.3V regulator
-    - For a portable application using a 5V USB power bank, a 5.0V -> 3.3V regulator would be better, something like AMS1117
+    - For a portable application using a 5V USB power bank, a 5.0V -> 3.3V regulator would be better, something like AMS1117 or LD1117
 
   - 9V/650mA wall wart power supply
     - Will be connected to an LDO voltage regulator to get a 3.3V supply for the ESP module
     - Power supply output voltage in range of 6.5V to 12V should work too
-	- 5V barely sufficient for particular LDO voltage regulator I had, which has a 1.7V dropout voltage. YMMV, as there are many lower drop-out voltage LDOs available. Basically I used a PSU I had and checked out datasheet for as efficient operation on LDO as possible.
+    - 5V barely sufficient for particular LDO voltage regulator I had, which has a 1.7V dropout voltage. YMMV, as there are many lower drop-out voltage LDOs available. Basically I used a PSU I had and checked out datasheet for as efficient operation on LDO as possible.
 
   - ESP-01 module, such as [ESP8266 ESP-01 Remote Serial Port WIFI Transceiver Wireless Module](https://www.banggood.com/ESP8266-Remote-Serial-Port-WIFI-Transceiver-Wireless-Module-p-947259.html?rmmds=search&cur_warehouse=CN)
 
@@ -124,11 +138,11 @@ VCC is 3.3V only on ALL pins!!
   - Two (2) ~10 kOhm resistors for pull-ups on switches
   - breadboarding supplies
     - half-height breadboard
-	- breadboard jumper wires
+    - breadboard jumper wires
     - various combos of male-female, male-male, and female-female jumper cables
   - *OPTIONAL*: LED light to display when board is powered powered
     - 3mm LED
-	- ~47 Ohm resistor for LED current limiting
+    - ~47 Ohm resistor for LED current limiting
   - *OPTIONAL*: ~100 µF capacitor for 3.3V supply filtering
     - Did not seem to be required for programming
 
