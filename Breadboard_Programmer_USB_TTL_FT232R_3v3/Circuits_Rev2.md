@@ -7,12 +7,14 @@ Updated 21-Feb-2018
 
   - Revision 2
 
-    - Reverted to an earlier version of design, with small mod removing pull-up resistor from "FLASH" button circuit. This has allowed for:
+    - Reverted to an earlier version of design, with small mod removing pull-up resistor from "FLASH" button circuit.
+	  This has allowed for:
         1. More reliable firmware upload sequence
         2. Not requiring continued holding down of "FLASH" button through  upload process.
     - Use pull-up on "CH_PD" pin
-    - Use two "[4 pin dual-female jumper wire - 300mm (5 PCs pack)](https://www.seeedstudio.com/4-pin-dual-female-jumper-wire-300mm-(5-PCs-pack\)-p-97.html)" for easier, quicker assembly of wires to ESP-01 module
-        - These are not shown on schematic/breadboard images
+    - Used two "4 pin dual-female jumper wire" for easier, quicker attachment to ESP-01 module
+	  - These are not shown on schematic/breadboard images
+	  - <https://www.seeedstudio.com/4-pin-dual-female-jumper-wire-300mm-(5-PCs-pack)-p-97.html>
 
 
 

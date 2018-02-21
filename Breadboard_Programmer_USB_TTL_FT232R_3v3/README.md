@@ -13,11 +13,8 @@ Using a USB serial cable and the easy-to-use ESP8266 Arduino project with Arduin
 Before going further, here are updated design revisions:
 
   - **[Revision 2](Circuits_Rev2.md)** - 19-Feb-2018
-    - Reverted to an earlier version of design, with small mod removing pull-up resistor from "FLASH" button circuit. This has allowed for:
-        1. More reliable firmware upload sequence
-        2. Not requiring continued holding down of "FLASH" button through  upload process.
-    - Use "[4 pin dual-female jumper wire - 300mm (5 PCs pack)](https://www.seeedstudio.com/4-pin-dual-female-jumper-wire-300mm-(5-PCs-pack\)-p-97.html)" for easier, quicker assembly of wires to ESP-01 module
-        - These are not shown on schematic/breadboard images
+    - Reverted to an earlier version of design
+
 
 **RECOMMENDED**: **Revision 2**.  Recommended to use in place of circuits described below
 
