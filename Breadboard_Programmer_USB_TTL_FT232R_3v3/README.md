@@ -149,6 +149,7 @@ VCC is 3.3V only on ALL pins!!
 
 ### Tools
 
+ - Computer as Arduino host, such as a Mac running macOS
  - Small needle nose pliers to aid solderless breadboard wire insertions
  - Magnifying glass to read part names and text
  - Digital multimeter to measure supplies and check continuity
