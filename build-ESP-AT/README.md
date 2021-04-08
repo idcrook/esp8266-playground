@@ -218,4 +218,6 @@ AT+CWMODE=1
 AT+CWLAP
 AT+CIPSTAMAC?
 AT+CWSTATE?
+AT+CWJAP?
+# AT+CWJAP=[<ssid>],[<pwd>][,<bssid>][,<pci_en>][,<reconn_interval>][,<listen_interval>][,<scan_mode>][,<jap_timeout>][,<pmf>]
 ```
