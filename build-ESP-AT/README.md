@@ -190,12 +190,14 @@ index 905275d..2a88525 100644
 ./build.py monitor
 ```
 
-AT commands test
+## AT commands test
+
+*picocom* is recommended as its first
 
 ```shell
 sudo apt install picocom
 picocom --baud 115200 --omap crcrlf /dev/ttyUSB1
-
+picocom --baud 115200 --omap crcrlf /dev/ttyUSB0
 ```
 Exiting `picocom`: <kbd>C-a C-x</kbd>
 
@@ -205,7 +207,7 @@ Exiting `picocom`: <kbd>C-a C-x</kbd>
 screen /dev/ttyUSB1 115200
 ```
 
-Exiting `picocom`: <kbd>C-a :quit</kbd>
+Exiting `screen`: <kbd>C-a :quit</kbd>
 
 # AT Commands
 
@@ -220,4 +222,40 @@ AT+CIPSTAMAC?
 AT+CWSTATE?
 AT+CWJAP?
 # AT+CWJAP=[<ssid>],[<pwd>][,<bssid>][,<pci_en>][,<reconn_interval>][,<listen_interval>][,<scan_mode>][,<jap_timeout>][,<pmf>]
+AT+CWJAP="SSID","passwd"
+AT+CIFSR
+```
+
+
+Examples
+
+```
+AT+GMR
+AT version:2.2.0.0-dev(875d40c - ESP8266 - Mar 31 2021 03:50:00)
+SDK version:v3.4-4-gd4507156
+compile time(11b35ee):Apr  8 2021 15:21:34
+Bin version:2.0.0(ESP8266_1MB)
+```
+
+
+### more AT commands
+
+
+```
+AT+CIFSR
+#AT+CIPDOMAIN=""
+```
+
+### try MQTT
+
+
+192.168.50.6
+
+```
+AT+MQTTUSERCFG=0,1,"ESP-01S","","",0,0,""
+AT+MQTTCONNCFG=0,0,0,"lwtt","lwtm",0,0
+AT+MQTTCONN=0,"192.168.50.6",1883,0
+AT+MQTTSUB=0,"shairport-sync/rpih1/artist",1
+#AT+MQTTPUB=0,"shairport-sync/rpih1/artist","test",1,0
+AT+MQTTCLEAN=0
 ```
