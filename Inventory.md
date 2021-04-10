@@ -1,15 +1,17 @@
 Inventory of Espressif-related gear
 ===================================
 
-| name      | desc                      | flash  | mfg | chip         | MAC     |
-|-----------|---------------------------|--------|-----|--------------|---------|
-| ESP-01    | blue                      | 512 KB | c8  | ESP8266EX    | %:c4:4e |
-| ESP-01    | blue                      | 512 KB | c8  | ESP8266EX    | %:c7:20 |
-| ESP-01S   | black                     | 4 MB   | 68  | ESP8266EX    | %:7d:ee |
-| Wifi i2c  | Pine64 module, with relay | 1 MB   | e0  | ESP8266EX    | %:82:a2 |
-| Wifi i2c  | Pine64 module, with relay | 1 MB   | e0  | ESP8266EX    | %:31:17 |
-| ESP-03    | hb0042 w/ OLED            | 1 MB   | 85  | ESP8266EX    | %:29:75 |
-| ESP32-CAM | incl. 2MP camera          | 4 MB   | 20  | ESP32-D0WDQ6 | %:eb:54 |
+| name      | desc                       | flash  | mfg | chip         | MAC     |
+|-----------|----------------------------|--------|-----|--------------|---------|
+| ESP-01    | blue                       | 512 KB | c8  | ESP8266EX    | %:c4:4e |
+| ESP-01    | blue                       | 512 KB | c8  | ESP8266EX    | %:c7:20 |
+| ESP-01S   | black                      | 4 MB   | 68  | ESP8266EX    | %:7d:ee |
+| Wifi i2c  | Pine64 module, with relay  | 1 MB   | e0  | ESP8266EX    | %:82:a2 |
+| Wifi i2c  | Pine64 module, with relay  | 1 MB   | e0  | ESP8266EX    | %:31:17 |
+| ESP-03    | soldered in hb0042 w/ OLED | 1 MB   | 85  | ESP8266EX    | %:29:75 |
+| ESP32-CAM | incl. 2MP camera           | 4 MB   | 20  | ESP32-D0WDQ6 | %:eb:54 |
+
+See [hb0042_portable_wifi_scanner](hb0042_portable_wifi_scanner/README.md) for pointers on board ESP-03 is soldered into.
 
 See [ESP32-CAM README](README-ESP32-CAM.md) for additional details on this ESP32-based module
 
