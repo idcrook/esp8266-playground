@@ -11,7 +11,7 @@ Inventory of Espressif-related gear
 | ESP-03    | soldered in hb0042 w/ OLED | 1 MB   | 85  | ESP8266EX    | %:29:75 |
 | ESP32-CAM | incl. 2MP camera           | 4 MB   | 20  | ESP32-D0WDQ6 | %:eb:54 |
 
-See [hb0042_portable_wifi_scanner](hb0042_portable_wifi_scanner/README.md) for pointers on board ESP-03 is soldered into.
+See [hb0042_portable_wifi_scanner](hb0042_portable_wifi_scanner#readme) for pointers on board ESP-03 is soldered into.
 
 See [ESP32-CAM README](README-ESP32-CAM.md) for additional details on this ESP32-based module
 
