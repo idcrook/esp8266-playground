@@ -1,6 +1,12 @@
 Creating a custom firmware for ESP-01 (512 kB)
 ==============================================
 
+Will need to wire up a ESP8266 module to write firmware onto it. That can be done with a USB-Serial converter, and the module hooked up via a solderless breadboard. Here's a helpful page that includes wiring diagram.
+
+https://www.allaboutcircuits.com/projects/flashing-the-ESP-01-firmware-to-SDK-v2.0.0-is-easier-now/
+
+# Roll your own AT firmware, building from source.
+
 https://docs.espressif.com/projects/esp-at/en/latest/Get_Started/index.html
 
 Tested on **Ubuntu 20.10 x86_64**
@@ -12,6 +18,7 @@ Tested on **Ubuntu 20.10 x86_64**
 Or
 
 1. Download firmware from https://www.espressif.com/en/support/download/at
+
 
 useful utils
 ------------
